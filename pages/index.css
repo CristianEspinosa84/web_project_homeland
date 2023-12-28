@@ -58,9 +58,8 @@ p {
 }
 
 .header__introduction {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
+  width: 1000px;
+  margin: auto;
 }
 
 .header__introduction-intro {
@@ -72,7 +71,7 @@ p {
   line-height: 58px;
   width: 900px;
   height: 116px;
-  padding-left: 14%;
+
   padding-bottom: 40px;
 }
 
@@ -84,7 +83,7 @@ p {
   font-weight: 400;
   line-height: 34px;
   width: 600px;
-  padding-left: 14%;
+
   padding-bottom: 30px;
 }
 
@@ -101,16 +100,14 @@ p {
   font-weight: 400;
   line-height: 163%;
   width: 710px;
-  padding-left: 14%;
+
   padding-bottom: 8%;
 }
 
 .images {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  width: 0;
   gap: 16px;
   padding-left: 8%;
 }
@@ -119,17 +116,19 @@ p {
   width: 284px;
   height: 213px;
 }
-
-.place__content {
+.places {
+  margin: auto;
+  width: 100%;
+  max-width: 984px;
 }
 
-.place__ucrania {
+.place {
+  padding-top: 90px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 460px 1fr;
 }
 
-.place__ucrania-title {
+.place__title {
   color: #fff;
   font-family: Inter;
   font-size: 72px;
@@ -137,14 +136,16 @@ p {
   font-weight: 900;
   line-height: 76px;
   width: 400px;
+  padding-bottom: 48px;
 }
 
-.place__ucrania-image {
+.place__image {
   width: 460px;
   height: 460px;
+  padding-bottom: 61px;
 }
 
-.place__ucrania-autor {
+.place__autor {
   color: #aaa;
   font-family: Inter;
   font-size: 12px;
@@ -153,9 +154,11 @@ p {
   line-height: normal;
   letter-spacing: 1.44px;
   text-transform: uppercase;
+  padding-top: 20%;
+  padding-left: 40px;
 }
 
-.place__ucrania-editor {
+.place__editor {
   color: #fff;
   font-family: Inter;
   font-size: 18px;
@@ -163,29 +166,21 @@ p {
   font-weight: 400;
   line-height: 22px;
   width: 456px;
+  padding-left: 40px;
 }
 
-.place__ucrania-description {
+.place__description {
   color: #fff;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 163%;
-  width: 484px;
+  width: 410px;
+  padding: 0 0 25px 40px;
 }
 
-.place__ucrania-subdescription {
-  color: #fff;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 163%;
-  width: 484px;
-}
-
-.place__ucrania-submit {
+.place__submit {
   color: #fff;
   font-family: Inter;
   font-size: 18px;
@@ -196,4 +191,59 @@ p {
   height: 50px;
   border-radius: 4px;
   background: #0278fe;
+}
+
+.visit {
+  background-image: url(../images/background.jpg);
+  margin: 0 auto;
+  width: 1184px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 92px;
+}
+
+.place__submit:hover {
+  background-color: #0267d6;
+}
+
+.place__visit-title {
+  color: #fffdfd;
+  text-align: center;
+  font-family: Inter;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 76px;
+}
+
+.place__visit-description {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  width: 280px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 92px;
+  padding-bottom: 24px;
+}
+
+.footer__copyright {
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }
