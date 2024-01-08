@@ -234,7 +234,8 @@ body {
 }
 
 .visit {
-  background-size: cover;
+  /* background-size: cover; */
+  background-image: url(/images/background.jpg);
   margin: auto;
   max-width: 1184px;
   width: 100%;
@@ -245,15 +246,17 @@ body {
   align-items: center;
   gap: 32px;
   margin-top: 92px;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("/images/background.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("/images/background.jpg"); */
   transition: background-color 0.3s ease;
-  background-size: cover;
+  position: relative;
+  object-fit: cover;
 }
 
 .visit:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/background.jpg");
+  opacity: 0.5;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/background.jpg"); */
 }
 
 .visit-title {
