@@ -155,10 +155,7 @@ body {
   padding-top: 90px;
   display: grid;
   grid-template-columns: 460px 1fr;
-  /* grid-template-areas:
-    "title subtitle"
-    "image text"
-    "buttom text"; */
+  grid-template-rows: repeat(2, min-content) 1fr;
 }
 
 .place__title {
@@ -170,15 +167,12 @@ body {
   line-height: 76px;
   width: 400px;
   padding-bottom: 48px;
-  /* grid-area: title; */
 }
 
 .place__image {
   max-width: 460px;
   width: 100%;
   height: 460px;
-  padding-bottom: 40px;
-  /* grid-area: image; */
 }
 
 .place__autor {
@@ -194,7 +188,6 @@ body {
   padding-left: 40px;
   max-width: 58px;
   width: 100%;
-  /* grid-area: subtitle; */
 }
 
 .place__editor {
@@ -207,7 +200,6 @@ body {
   max-width: 456px;
   width: 100%;
   padding-left: 40px;
-  /* grid-area: subtitle; */
 }
 
 .place__description {
@@ -220,7 +212,12 @@ body {
   max-width: 410px;
   width: 100%;
   padding: 0 0 25px 40px;
-  /* grid-area: text; */
+}
+
+.palce__text {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .place__submit {
@@ -236,7 +233,7 @@ body {
   border-radius: 4px;
   background: #0278fe;
   transition: background-color 0.3s;
-  /* grid-area: buttom; */
+  margin-top: 40px;
 }
 
 .place__submit:hover {
@@ -244,7 +241,6 @@ body {
 }
 
 .visit {
-  /* background-size: cover; */
   background-image: url(/images/background.jpg);
   margin: auto;
   max-width: 1184px;
@@ -256,8 +252,6 @@ body {
   align-items: center;
   gap: 32px;
   margin-top: 92px;
-  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("/images/background.jpg"); */
   transition: background-color 0.3s ease;
   position: relative;
   object-fit: cover;
@@ -265,8 +259,6 @@ body {
 
 .visit:hover {
   opacity: 0.5;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/background.jpg"); */
 }
 
 .visit-title {
@@ -326,17 +318,28 @@ body {
   line-height: 16px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 984px) {
   .header__content-image {
     max-width: 768px;
   }
 
   .header__introduction-intro {
     max-width: 720px;
+    margin: auto;
+    padding: 0;
   }
 
   .header__introduction-description {
     max-width: 720px;
+    margin: auto;
+  }
+
+  .header__introduction-text {
+    margin: auto;
+  }
+
+  .palces {
+    max-width: 750px;
   }
 
   .place {
@@ -362,6 +365,7 @@ body {
 
   .place__image {
     max-width: 340px;
+    margin-left: 24px;
   }
 
   .place__description {
@@ -407,58 +411,51 @@ body {
     font-size: 32px;
     line-height: 35px;
     max-width: 288px;
-    padding-left: 16px;
   }
 
   .header__introduction-description {
     font-size: 24px;
     line-height: 30px;
     max-width: 288px;
-    padding-left: 16px;
   }
 
   .header__introduction-text {
     font-size: 16px;
     line-height: 26px;
     max-width: 288px;
-    padding-left: 16px;
   }
 
   .place__title {
     font-size: 32px;
     line-height: 35px;
     max-width: 288px;
-    padding-left: 16px;
   }
   .place {
     display: unset;
   }
   .place__autor {
     padding-top: 0;
-    padding-left: 16px;
   }
 
   .place__editor {
     max-width: 288px;
     padding-bottom: 30px;
-    padding-left: 16px;
   }
   .place__image {
     max-width: 320px;
     padding: 0;
+    margin: unset;
   }
 
   .place__description {
     max-width: 288px;
     padding: 0;
-    padding-left: 16px;
   }
 
   .place__submit {
     font-size: 14px;
     line-height: 16px;
     max-width: 288px;
-    padding-left: 16px;
   }
 
   .visit {
