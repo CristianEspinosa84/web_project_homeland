@@ -155,6 +155,10 @@ body {
   padding-top: 90px;
   display: grid;
   grid-template-columns: 460px 1fr;
+  /* grid-template-areas:
+    "title subtitle"
+    "image text"
+    "buttom text"; */
 }
 
 .place__title {
@@ -166,6 +170,7 @@ body {
   line-height: 76px;
   width: 400px;
   padding-bottom: 48px;
+  /* grid-area: title; */
 }
 
 .place__image {
@@ -173,6 +178,7 @@ body {
   width: 100%;
   height: 460px;
   padding-bottom: 40px;
+  /* grid-area: image; */
 }
 
 .place__autor {
@@ -188,6 +194,7 @@ body {
   padding-left: 40px;
   max-width: 58px;
   width: 100%;
+  /* grid-area: subtitle; */
 }
 
 .place__editor {
@@ -200,6 +207,7 @@ body {
   max-width: 456px;
   width: 100%;
   padding-left: 40px;
+  /* grid-area: subtitle; */
 }
 
 .place__description {
@@ -212,6 +220,7 @@ body {
   max-width: 410px;
   width: 100%;
   padding: 0 0 25px 40px;
+  /* grid-area: text; */
 }
 
 .place__submit {
@@ -227,6 +236,7 @@ body {
   border-radius: 4px;
   background: #0278fe;
   transition: background-color 0.3s;
+  /* grid-area: buttom; */
 }
 
 .place__submit:hover {
