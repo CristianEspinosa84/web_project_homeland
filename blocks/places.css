@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 460px 1fr;
   grid-template-rows: repeat(2, min-content) 1fr;
+  padding-top: 80px;
 }
 
 .place__title {
@@ -19,7 +20,9 @@
   font-weight: 900;
   line-height: 76px;
   width: 400px;
-  padding-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .place__image {
