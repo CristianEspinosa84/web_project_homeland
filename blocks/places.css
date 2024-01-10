@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 460px 1fr;
   grid-template-rows: repeat(2, min-content) 1fr;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 .place__title {
@@ -40,7 +40,7 @@
   line-height: normal;
   letter-spacing: 1.44px;
   text-transform: uppercase;
-  padding-top: 20%;
+  padding-top: 70px;
   padding-left: 40px;
   max-width: 58px;
   width: 100%;
