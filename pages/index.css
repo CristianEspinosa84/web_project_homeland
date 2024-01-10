@@ -84,9 +84,6 @@
   .visit {
     max-width: 768px;
   }
-
-  .place__submit {
-  }
 }
 
 @media screen and (max-width: 520px) {
