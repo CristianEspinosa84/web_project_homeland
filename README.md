@@ -15,7 +15,7 @@ Abre los archivos en tu editor de código y visualízalos en tu navegador para v
 
 ## Autores
 
-- **Cristian Espinosa** - _Trabajo Inicial_ - [cristian-espinosa](https://github.com/CristianEspinosa84/web_project_homeland/tree/main)
+- **Cristian Espinosa** - _Trabajo Inicial_ - [cristian-espinosa] https://cristianespinosa84.github.io/web_project_homeland/
 
 ## Licencia
 
