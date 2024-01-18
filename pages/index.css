@@ -5,8 +5,9 @@
 @import url(../blocks/places.css);
 @import url(../blocks/visit.css);
 @import url(../blocks/footer.css);
+@import url(../blocks/fonts.css);
 
-@font-face {
+/* @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -185,4 +186,4 @@
     font-size: 14px;
     line-height: 14px;
   }
-}
+} */

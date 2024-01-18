@@ -11,3 +11,16 @@
   width: 100%;
   height: 213px;
 }
+
+@media screen and (max-width: 984px) {
+  .images {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .images {
+    justify-content: center;
+    padding: 0;
+  }
+}
