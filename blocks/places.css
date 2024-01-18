@@ -68,7 +68,7 @@
   padding: 0 0 25px 40px;
 }
 
-.palce__paragraph {
+.place__paragraph {
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row-end: 4;
